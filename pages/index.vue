@@ -3,8 +3,10 @@ const userStore = useUserStore();
 </script>
 
 <template>
-  <div>test index</div>
-  <div>{{ userStore.user }}</div>
+  <div>
+    <div>test index</div>
+    <div>{{ userStore.user }}</div>
+  </div>
 </template>
 
 <style scoped></style>

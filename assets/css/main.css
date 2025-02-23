@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind components;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@layer components {
+  .menu__item {
+    @apply flex items-center gap-2 py-2 pr-2 pl-3 rounded-md cursor-pointer border border-transparent;
+  }
+}
+
+.menu__active {
+  --tw-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.12) inset;
+  --tw-shadow-colored: 0 1px 2px 0 #000;
+  --tw-border-opacity: 1;
+
+  border-width: 1px;
+  background-color: white;
+  border-color: rgb(226 232 240 / 1);
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

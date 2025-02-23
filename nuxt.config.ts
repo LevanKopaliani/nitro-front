@@ -62,6 +62,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  router: {
+    options: {
+      linkActiveClass: "menu__active",
+    },
+  },
+  css: ["primeicons/primeicons.css", "~/assets/css/main.css"],
+  components: {
+    dirs: [{ path: "./components", pathPrefix: false }],
+  },
 
   modules: ["@pinia/nuxt", "@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
   pinia: {
