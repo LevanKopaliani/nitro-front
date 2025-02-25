@@ -3,6 +3,8 @@ import { ref } from "vue";
 
 const userStore = useUserStore();
 
+// const accessToken = useCookie("accessToken");
+
 definePageMeta({
   layout: "auth",
 });
@@ -25,11 +27,13 @@ async function logIn() {
     });
 
     if (response.statusCode === 200) {
-      localStorage.setItem("token", response.token);
+      // accessToken.value = response.token;
+      // localStorage.setItem("token", response.token);
       userStore.user = response?.user;
       userStore.token = response?.token;
-      alert("Login is successful");
+      // alert("Login is successful");
       await navigateTo("/");
+      console.log("login succes");
     } else {
       console.log("Login failed:", response.message);
       alert("Username or password is invalid");

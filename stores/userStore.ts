@@ -8,6 +8,8 @@ export const useUserStore = defineStore("user", {
   }),
   actions: {
     async getUserData(token: string) {
+      // this.token = token;
+      console.log("gaiara");
       const response = await $fetch("/api/auth/me", {
         method: "POST",
         headers: {
