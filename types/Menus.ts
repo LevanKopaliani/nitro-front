@@ -1,8 +1,9 @@
-export interface Menus {
-  id: number;
-  configs: String[];
-  title: String;
-  menu_type: String;
+export type MenuItem = {
+  id?: number;
+  configs?: string[];
+  title: string;
+  menu_type: string;
   pid: number;
-  slug: String;
-}
+  slug: string;
+  items?: MenuItem[];
+};

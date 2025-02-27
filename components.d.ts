@@ -12,7 +12,17 @@ declare module 'vue' {
     PrimeDrawer: typeof import('primevue/drawer')['default']
     PrimeFloatLabel: typeof import('primevue/floatlabel')['default']
     PrimeInputText: typeof import('primevue/inputtext')['default']
+    PrimePanelMenu: typeof import('primevue/panelmenu')['default']
+    PrimeTab: typeof import('primevue/tab')['default']
+    PrimeTabList: typeof import('primevue/tablist')['default']
+    PrimeTabPanel: typeof import('primevue/tabpanel')['default']
+    PrimeTabPanels: typeof import('primevue/tabpanels')['default']
+    PrimeTabs: typeof import('primevue/tabs')['default']
+    PrimeTree: typeof import('primevue/tree')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+  }
+  export interface ComponentCustomProperties {
+    Ripple: typeof import('primevue/ripple')['default']
   }
 }

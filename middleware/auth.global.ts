@@ -21,7 +21,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
         await userStore.getUserData(Authtoken.value);
       }
     } catch (error) {
-      return navigateTo("/login");
+      // return navigateTo("/login");
     }
   } else if (to.name !== "login") {
     return navigateTo("/login");
