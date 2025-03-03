@@ -32,21 +32,21 @@
           </nuxt-link>
         </div>
         <div>
-          <p class="menu__item">
+          <nuxt-link to="/help" class="menu__item">
             <span class="pi pi-question-circle"></span><span>help</span>
-          </p>
-          <p class="menu__item">
+          </nuxt-link>
+          <nuxt-link to="/settings" class="menu__item">
             <span class="pi pi-cog"></span><span>settings</span>
-          </p>
+          </nuxt-link>
         </div>
       </div>
     </aside>
     <main class="py-2 w-full pr-2">
       <div
-        class="bg-white border rounded-2xl border-slate-200 p-4 flex flex-col gap-6 h-full"
+        class="bg-white border rounded-2xl border-slate-200 p-4 flex flex-col gap-3 h-full"
       >
-        <div class="pb-4 border-b border-slate-200">heading</div>
-        <div><slot /></div>
+        <layout-header />
+        <div class="overflow-y-auto pr-4"><slot /></div>
       </div>
     </main>
   </div>

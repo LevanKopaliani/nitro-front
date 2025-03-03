@@ -35,7 +35,7 @@ function handleDeleteMenu(item: MenuItem) {
       <p>{{ menuItem.title }}</p>
     </div>
 
-    <div class="border border-slate-100 rounded-lg p-2 flex gap-2">
+    <div class="p-2 flex gap-2">
       <PrimeButton
         icon="pi pi-plus"
         style="font-size: 1rem"
